@@ -1,0 +1,17 @@
+<html>
+<head>
+    <script src="jam/require.js"></script>
+    <script type="text/javascript">
+    	require(['backbone', 'backbone.stickit'], function (Backbone, Stickit) {
+    		var view = new Backbone.View({el: 'body'});
+    		var model = new Backbone.Model({name: 'world'});
+    		view.stickit(model, {'input': 'name', 'b': 'name'});
+    	});
+    </script>
+</head>
+<body>
+    Say hello to: <input type="text">
+    <h1>Hello, <b></b>!</h1>
+
+</body>
+</html>
