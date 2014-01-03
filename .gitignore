@@ -18,3 +18,4 @@ xcuserdata
 CVS
 
 jam/*
+!jam/require.config.js
