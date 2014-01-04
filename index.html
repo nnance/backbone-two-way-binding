@@ -5,13 +5,13 @@
     	require(['backbone', 'backbone.stickit'], function (Backbone, Stickit) {
     		var view = new Backbone.View({el: 'body'});
     		var model = new Backbone.Model({name: 'world'});
-    		view.stickit(model, {'input': 'name', 'b': 'name'});
+    		view.stickit(model, {'input': 'name', 'span': 'name'});
     	});
     </script>
 </head>
 <body>
     Say hello to: <input type="text">
-    <h1>Hello, <b></b>!</h1>
+    <h1>Hello, <span></span>!</h1>
 
 </body>
 </html>
